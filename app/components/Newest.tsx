@@ -1,55 +1,55 @@
 import Link from "next/link";
-// import { simplifiedProduct } from "../interface";
-// import { client } from "../lib/sanity";
+import { simplifiedProduct } from "../interface";
+import { client } from "../lib/sanity";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import image1 from "../../public/HeroImages/686dcf10-6030-4b31-967d-356f8b747732.webp"; //ee image kuda example aa remvoe it while we use sanity
+import image1 from "../../public/HeroImages/686dcf10-6030-4b31-967d-356f8b747732.webp"; //Image for testing in local
 
+async function getData() {
+    const query = `*[_type == "product"][0...4] | order(_createdAt desc) {
+        _id,
+          price,
+        name,
+          "slug": slug.current,
+          "categoryName": category->name,
+          "imageUrl": images[0].asset->url
+      }`;
 
-// async function getData() {
-//     const query = `*[_type == "product"][0...4] | order(_createdAt desc) {
-//         _id,
-//           price,
-//         name,
-//           "slug": slug.current,
-//           "categoryName": category->name,
-//           "imageUrl": images[0].asset->url
-//       }`;
+    const data = await client.fetch(query);
 
-//     const data = await client.fetch(query);
+    return data;
+}
 
-//     return data;
-// }
-
-const products = [ // idi kuda demo ke tiskunna products remove chey while working on sanity
-    {
-        id: 1,
-        name: "Nike Windrunner",
-        categoryName: "Men",
-        price: 200,
-    },
-    {
-        id: 2,
-        name: "Nike Windrunner",
-        categoryName: "Men",
-        price: 200,
-    },
-    {
-        id: 3,
-        name: "Nike Windrunner",
-        categoryName: "Men",
-        price: 200,
-    },
-    {
-        id: 4,
-        name: "Nike Windrunner",
-        categoryName: "Men",
-        price: 200,
-    },
-];
+// const products = [
+//     // Testing for local.
+//     {
+//         id: 1,
+//         name: "Nike Windrunner",
+//         categoryName: "Men",
+//         price: 200,
+//     },
+//     {
+//         id: 2,
+//         name: "Nike Windrunner",
+//         categoryName: "Men",
+//         price: 200,
+//     },
+//     {
+//         id: 3,
+//         name: "Nike Windrunner",
+//         categoryName: "Men",
+//         price: 200,
+//     },
+//     {
+//         id: 4,
+//         name: "Nike Windrunner",
+//         categoryName: "Men",
+//         price: 200,
+//     },
+// ];
 
 export default async function Newest() {
-    // const data: simplifiedProduct[] = await getData(); 
+    const data: simplifiedProduct[] = await getData();
 
     return (
         <div className="bg-white">
@@ -70,7 +70,7 @@ export default async function Newest() {
                     </Link>
                 </div>
 
-                {/* <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                     {data.map((product) => (
                         <div key={product._id} className="group relative">
                             <div className="aspect-square w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:h-80">
@@ -100,11 +100,11 @@ export default async function Newest() {
                             </div>
                         </div>
                     ))}
-                </div> */}
+                </div>
 
-                {/* Pina sanity original Kindha demo kosam rasina code */}
+                {/* Below code for testing in the local environment*/}
 
-                <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                {/* <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                     {products.map((product) => (
                         <div key={product.id} className="group relative">
                             <div className="aspect-square w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:h-80">
@@ -132,7 +132,7 @@ export default async function Newest() {
                             </div>
                         </div>
                     ))}
-                </div>
+                </div> */}
             </div>
         </div>
     );

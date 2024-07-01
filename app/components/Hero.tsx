@@ -1,20 +1,18 @@
 import Image from "next/image";
-// import { client, urlFor } from "../lib/sanity";
+import { client, urlFor } from "../lib/sanity";
 import Link from "next/link";
 
-import image1 from "../../public/HeroImages/686dcf10-6030-4b31-967d-356f8b747732.webp";
-import image2 from "../../public/HeroImages/ba06b5a3-3cc0-4730-957a-a484b2fcbaa9.webp";
+import image1 from "../../public/HeroImages/686dcf10-6030-4b31-967d-356f8b747732.webp"; // get image from the local
+import image2 from "../../public/HeroImages/ba06b5a3-3cc0-4730-957a-a484b2fcbaa9.webp"; // get image from the local
 
-// async function getData() {
-//     const query = "*[_type == 'heroImage'][0]";
-
-//     const data = await client.fetch(query);
-
-//     return data;
-// }
+async function getData() {
+    const query = "*[_type == 'heroImages'][0]";
+    const data = await client.fetch(query);
+    return data;
+}
 
 export default async function Hero() {
-    // const data = await getData();
+    const data = await getData();
     return (
         <section className="mx-auto max-w-2xl px-4 sm:pb-6 lg:max-w-7xl lg:px-8">
             <div className="mb-8 flex flex-wrap justify-between md:mb-16">
@@ -32,8 +30,8 @@ export default async function Hero() {
                 <div className="mb-12 flex w-full md:mb-16 lg:w-2/3">
                     <div className="relative left-12 top-12 z-10 -ml-12 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:left-16 md:top-16 lg:ml-0">
                         <Image
-                            // src={urlFor(data.image1).url()}
-                            src={image1}
+                            src={urlFor(data.image1).url()}
+                            // src={image1}  if you want to get the image from the local
                             alt="Great Photo"
                             className="h-full w-full object-cover object-center"
                             priority
@@ -44,8 +42,8 @@ export default async function Hero() {
 
                     <div className="overflow-hidden rounded-lg bg-gray-100 shadow-lg">
                         <Image
-                            // src={urlFor(data.image2).url()}
-                            src={image2}
+                            src={urlFor(data.image2).url()}
+                            // src={image2}  if you want to get the image from the local
                             alt="Great Photo"
                             className="h-full w-full object-cover object-center"
                             width={500}
