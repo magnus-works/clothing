@@ -4,10 +4,7 @@ import { simplifiedProduct } from "../interface";
 import { client } from "../lib/sanity";
 import {
     ArrowRight,
-    ChevronLeft,
-    ChevronRight,
     Heart,
-    Star,
     Eye,
     Repeat,
     ShoppingBag,
