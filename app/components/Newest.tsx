@@ -13,8 +13,8 @@ import {
     ShoppingBag,
 } from "lucide-react";
 import Image from "next/image";
+import { AddToBag } from "@/components/Addtobag";
 // import image1 from "../../public/HeroImages/686dcf10-6030-4b31-967d-356f8b747732.webp"; //Image for testing in local
-// import { useToast } from "@/components/ui/use-toast";
 
 async function getData() {
     const query = `*[_type == "product"][0...4] | order(_createdAt desc) {
@@ -31,37 +31,8 @@ async function getData() {
     return data;
 }
 
-// const products = [
-//     // Testing for local.
-//     {
-//         id: 1,
-//         name: "Nike Windrunner",
-//         categoryName: "Men",
-//         price: 200,
-//     },
-//     {
-//         id: 2,
-//         name: "Nike Windrunner",
-//         categoryName: "Men",
-//         price: 200,
-//     },
-//     {
-//         id: 3,
-//         name: "Nike Windrunner",
-//         categoryName: "Men",
-//         price: 200,
-//     },
-//     {
-//         id: 4,
-//         name: "Nike Windrunner",
-//         categoryName: "Men",
-//         price: 200,
-//     },
-// ];
-
 export default async function Newest() {
     const data: simplifiedProduct[] = await getData();
-    // const { toast } = useToast();
 
     return (
         <div className="bg-white">
@@ -82,115 +53,11 @@ export default async function Newest() {
                     </Link>
                 </div>
 
-                <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-                    {data.map((product) => (
-                        <div key={product._id} className="group relative">
-                            <div className="group relative w-full max-w-sm rounded-lg bg-card shadow-sm transition-all hover:shadow-md">
-                                <div className="relative aspect-[4/3] rounded-t-lg">
-                                    <Image
-                                        src={product.imageUrl}
-                                        alt="Product Image"
-                                        width={400}
-                                        height={300}
-                                        className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
-                                    />
-                                    <div className="absolute inset-0 z-10 flex items-center justify-between px-4 py-2 opacity-0 transition-opacity group-hover:opacity-100">
-                                        <Button
-                                            variant="ghost"
-                                            size="icon"
-                                            className="rounded-full bg-card/80 text-card-foreground shadow-sm transition-colors hover:bg-card"
-                                        >
-                                            <ChevronLeft className="h-5 w-5" />
-                                        </Button>
-                                        <Button
-                                            variant="ghost"
-                                            size="icon"
-                                            className="rounded-full bg-card/80 text-card-foreground shadow-sm transition-colors hover:bg-card"
-                                        >
-                                            <ChevronRight className="h-5 w-5" />
-                                        </Button>
-                                    </div>
-                                    <div className="hidden group-hover:block">
-                                        <div className="absolute top-4 right-4 z-10 flex flex-col items-center gap-2">
-                                            <Button
-                                                variant="ghost"
-                                                size="icon"
-                                                className="rounded-full bg-card/80 text-card-foreground shadow-sm transition-colors hover:bg-card"
-                                            >
-                                                <Heart className="h-5 w-5" />
-                                            </Button>
-                                            <Button
-                                                variant="ghost"
-                                                size="icon"
-                                                className="rounded-full bg-card/80 text-card-foreground shadow-sm transition-colors hover:bg-card"
-                                            >
-                                                <Eye className="h-5 w-5" />
-                                            </Button>
-                                            <Button
-                                                variant="ghost"
-                                                size="icon"
-                                                className="rounded-full bg-card/80 text-card-foreground shadow-sm transition-colors hover:bg-card"
-                                            >
-                                                <Repeat className="h-5 w-5" />
-                                            </Button>
-                                            <Button
-                                                variant="ghost"
-                                                size="icon"
-                                                className="rounded-full bg-card/80 text-card-foreground shadow-sm transition-colors hover:bg-card"
-                                            >
-                                                <ShoppingBag className="h-5 w-5" />
-                                            </Button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="p-3">
-                                    <div className="flex items-center justify-between">
-                                        <h3 className="text-lg font-semibold tracking-tight">
-                                            {product.name}
-                                        </h3>
-                                        <div className="text-2xl font-bold">
-                                            ${product.price}
-                                        </div>
-                                    </div>
-                                    <div className="mt-2 text-sm text-primary font-semibold">
-                                        Category: {product.categoryName}
-                                    </div>
-                                    <div className="mt-4 flex items-center justify-between">
-                                        <div className="flex items-center gap-1">
-                                            <Star className="h-4 w-4 fill-primary" />
-                                            <Star className="h-4 w-4 fill-primary" />
-                                            <Star className="h-4 w-4 fill-primary" />
-                                            <Star className="h-4 w-4 fill-muted stroke-muted-foreground" />
-                                            <Star className="h-4 w-4 fill-muted stroke-muted-foreground" />
-                                            <span className="text-sm text-muted-foreground">
-                                                4.3
-                                            </span>
-                                        </div>
-                                        <div className="flex items-center">
-                                            <Button
-                                                variant="ghost"
-                                                size="icon"
-                                                className="rounded-full bg-card/80 text-card-foreground shadow-sm transition-colors hover:bg-card"
-                                            ></Button>
-                                            <Button
-                                                size="sm"
-                                                className="flex-shrink-0"
-                                            >
-                                                Add to Cart
-                                            </Button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-
-                <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-6">
                     {data.map((product) => (
                         <div key={product._id} className="group relative">
                             <div className="relative max-w-sm mx-auto bg-white rounded-lg border border-gray-200 shadow-md">
-                                <div className="relative h-56 w-full">
+                                <div className="relative h-80 w-full">
                                     <Image
                                         src={product.imageUrl}
                                         layout="fill"
@@ -198,8 +65,10 @@ export default async function Newest() {
                                         alt="Gentle Cleanse & Make-Up Remover"
                                     />
                                 </div>
-                                <div className="hidden group-hover:block">
-                                    <div className="absolute top-4 right-4 z-10 flex flex-col items-center gap-2">
+                                <div
+                                //className="hidden group-hover:block"
+                                >
+                                    <div className="absolute top-4 right-4 z-10 flex flex-col items-center gap-2 transform translate-x-full opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-transform duration-500">
                                         <Button
                                             variant="ghost"
                                             size="icon"
@@ -259,17 +128,7 @@ export default async function Newest() {
                                         <span className="text-3xl font-bold text-gray-900">
                                             ${product.price}
                                         </span>
-                                        <button
-                                            className="py-2 px-4 text-sm font-medium text-white bg-green-600 rounded hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 transition duration-300"
-                                            // onClick={() => {
-                                            //     toast({
-                                            //         description:
-                                            //             "Item has added to the bag",
-                                            //     });
-                                            // }}
-                                        >
-                                            Add to Bag
-                                        </button>
+                                        <AddToBag/>
                                     </div>
                                 </div>
                             </div>
