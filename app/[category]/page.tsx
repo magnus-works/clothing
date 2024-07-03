@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 async function getData(category: string) {
     const query = `*[_type=="product" && category->name=='${category}']{
