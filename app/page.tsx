@@ -1,6 +1,7 @@
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Newest from "./components/Newest";
+// import MovingCards from "./components/MovingCards";
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
             <Hero />
             <Newest />
             <Footer />
+            {/* <MovingCards /> */}
         </div>
     );
 }
