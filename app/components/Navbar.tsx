@@ -35,6 +35,7 @@ import image1 from "../../public/MenuPhotos/Home.jpg";
 import image2 from "../../public/MenuPhotos/MenMenu.jpg";
 import image3 from "../../public/MenuPhotos/Women.jpg";
 import image4 from "../../public/MenuPhotos/Kids.jpg";
+import AnimatedSearch from "./AnimatedSearch";
 import Image from "next/image";
 const links = [
     { name: "Home", href: "/", img: image1 },
@@ -52,7 +53,7 @@ export default function Navbar() {
     return (
         <div>
             <div className="flex justify-center bg-primary h-10 md:gap-48 lg:gap-96">
-                <div>
+                <div className="">
                     <HoverCard>
                         <HoverCardTrigger asChild>
                             <Button className="text-white" variant="link">
@@ -111,9 +112,9 @@ export default function Navbar() {
                     </AnimatedButton>
                 </div>
 
-                <div className="hidden flex-1 md:flex justify-center items-center">
-                    <h1 className="text-2xl md:text-3xl font-bold">
-                        Next<span className="text-primary">Commerce</span>
+                <div className="ml-2 flex-1 md:flex justify-center items-center">
+                    <h1 className="text-lg justify-center items-center sm:text-2xl md:text-3xl font-bold">
+                        Archana<span className="text-primary"> Garments</span>
                     </h1>
                 </div>
                 <div className="hidden md:flex flex-1 justify-end items-center gap-4">
@@ -235,14 +236,7 @@ export default function Navbar() {
                         </Sheet>
                         <div className="flex w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
                             <form className="ml-auto flex-1 sm:flex-initial">
-                                <div className="relative">
-                                    <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-                                    <Input
-                                        type="search"
-                                        placeholder="Search products..."
-                                        className="pl-8 sm:w-[300px] md:w-[200px] lg:w-[300px]"
-                                    />
-                                </div>
+                                <AnimatedSearch />
                             </form>
                             <DropdownMenu>
                                 <DropdownMenuTrigger asChild>

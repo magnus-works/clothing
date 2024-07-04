@@ -6,6 +6,7 @@ import { FlipWords } from "../../components/ui/flip-words";
 // import { HeroHighlight, Highlight } from "../../components/ui/hero-highlight";
 import { motion } from "framer-motion";
 import HeroHighlight from "../../app/components/HeroHighlight";
+import MovingCards from "./MovingCards";
 
 import image1 from "../../public/HeroImages/686dcf10-6030-4b31-967d-356f8b747732.webp"; // get image from the local
 import image2 from "../../public/HeroImages/ba06b5a3-3cc0-4730-957a-a484b2fcbaa9.webp"; // get image from the local
@@ -27,7 +28,7 @@ export default async function Hero() {
                         <HeroHighlight />
                     </div>
 
-                    <div className="mb-12 flex w-full md:mb-16 lg:w-2/3">
+                    <div className="mt-6         mb-12 flex w-full md:mb-16 lg:w-2/3">
                         <div className=" md:h-[700px] relative left-12 top-12 z-10 -ml-12 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:left-16 md:top-16 lg:ml-0">
                             <Image
                                 src={urlFor(data.image1).url()}
@@ -69,12 +70,16 @@ export default async function Hero() {
                         Women
                     </Link>
                     <Link
-                        href="/Teens"
+                        href="/Kids"
                         className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
                     >
-                        Teens
+                        Kids
                     </Link>
                 </div>
+            </div>
+            <div className="text-3xl font-bold p-12">
+                Testimonials
+                <MovingCards />
             </div>
         </div>
     );

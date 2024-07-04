@@ -1,7 +1,8 @@
 import type { Config } from "tailwindcss";
 import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
-// const svgToDataUri = require("mini-svg-data-uri");
 import svgToDataUri from "mini-svg-data-uri";
+import defaultTheme from "tailwindcss/defaultTheme";
+import colors from "tailwindcss/colors";
 
 const config = {
   darkMode: ["class"],
@@ -70,10 +71,17 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
     },
   },
