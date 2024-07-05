@@ -48,7 +48,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="text-2xl md:text-3xl text-center py-8 border-b-2">
-                THE PIONEERS OF ORGANIC BEAUTY SINCE 1997
+                THE PIONEERS OF ORGANIC BEAUTY SINCE 1999
             </div>
             <div className="flex flex-col md:flex-row justify-around px-4 md:px-32 py-8 border-b-2">
                 <div className="flex flex-col items-center md:items-start gap-3 mb-8 md:mb-0">
@@ -86,14 +86,17 @@ export default function Footer() {
             <div className="flex flex-col md:flex-row justify-between px-4 md:px-44 py-8 text-center md:text-left">
                 <div className="mb-4 md:mb-0">
                     <div>
-                        © Copyright 2024 Next Ecommerce. All Rights Reserved.
+                        © Copyright 2024 Team Magnus. All Rights Reserved.
                     </div>
                 </div>
                 <div className="flex flex-col md:flex-row gap-3">
                     <div>Privacy Policy</div>
                     <div>Terms & Conditions</div>
                 </div>
-                <div>797 Kulas Fords, Skilesberg, GA 33691-3559</div>
+                <div>
+                    Address and location to be updates here. For more
+                    information.{" "}
+                </div>
             </div>
         </div>
     );
