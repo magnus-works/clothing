@@ -35,6 +35,7 @@ import image1 from "../../public/MenuPhotos/Home.jpg";
 import image2 from "../../public/MenuPhotos/MenMenu.jpg";
 import image3 from "../../public/MenuPhotos/Women.jpg";
 import image4 from "../../public/MenuPhotos/Kids.jpg";
+import logo from "../../public/Archanalogo.png";
 import AnimatedSearch from "./AnimatedSearch";
 import Image from "next/image";
 const links = [
@@ -100,8 +101,8 @@ export default function Navbar() {
                     </Button>
                 </div>
             </div>
-            <div className="flex p-2 mx-10 border-b border-gray-200">
-                <div className="flex-1 justify-center items-center">
+            <div className="md:flex p-2 border-b border-gray-200">
+                <div className="flex justify-center items-center md:block md:flex-1">
                     <AnimatedButton
                         borderRadius="1.75rem"
                         containerClassName="w-60"
@@ -112,11 +113,14 @@ export default function Navbar() {
                     </AnimatedButton>
                 </div>
 
-                <div className="ml-2 flex-1 md:flex justify-center items-center">
-                    <h1 className="text-lg justify-center items-center sm:text-2xl md:text-3xl font-bold">
-                        Archana<span className="text-primary"> Garments</span>
+                <div className="my-1 flex justify-center items-center">
+                    <Image src={logo} width={50} alt="Logo" height={50} />
+                    <h1 className="text-2xl justify-center items-center sm:text-2xl md:text-3xl font-bold">
+                        Archana
+                        <span className="text-primary"> Garments</span>
                     </h1>
                 </div>
+
                 <div className="hidden md:flex flex-1 justify-end items-center gap-4">
                     <Avatar>
                         <AvatarImage
