@@ -2,13 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { simplifiedProduct } from "../interface";
 import { client } from "../lib/sanity";
-import {
-    ArrowRight,
-    Heart,
-    Eye,
-    Repeat,
-    ShoppingBag,
-} from "lucide-react";
+import { ArrowRight, Heart, Eye, Repeat, ShoppingBag } from "lucide-react";
 import Image from "next/image";
 import { AddToBag } from "@/components/Addtobag";
 // import image1 from "../../public/HeroImages/686dcf10-6030-4b31-967d-356f8b747732.webp"; //Image for testing in local
@@ -123,9 +117,9 @@ export default async function Newest() {
                                     </div>
                                     <div className="flex justify-between items-center">
                                         <span className="text-3xl font-bold text-gray-900">
-                                            ${product.price}
+                                            ₹{product.price}
                                         </span>
-                                        <AddToBag/>
+                                        <AddToBag />
                                     </div>
                                 </div>
                             </div>
