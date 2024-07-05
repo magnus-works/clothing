@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
+import { MessageCircleHeart } from "lucide-react";
 
 export function AddToBag() {
   const { toast } = useToast();
@@ -16,7 +17,7 @@ export function AddToBag() {
         });
       }}
     >
-      Most liked
+      Most liked <MessageCircleHeart className="ml-2" />
     </Button>
   );
 }
