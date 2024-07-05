@@ -113,13 +113,16 @@ export default function Navbar() {
                     </AnimatedButton>
                 </div>
 
-                <div className="my-1 flex justify-center items-center">
+                <Link
+                    href="/"
+                    className="my-1 flex justify-center items-center"
+                >
                     <Image src={logo} width={50} alt="Logo" height={50} />
                     <h1 className="text-2xl justify-center items-center sm:text-2xl md:text-3xl font-bold">
                         Archana
                         <span className="text-primary"> Garments</span>
                     </h1>
-                </div>
+                </Link>
 
                 <div className="hidden md:flex flex-1 justify-end items-center gap-4">
                     <Avatar>
@@ -238,7 +241,7 @@ export default function Navbar() {
                                 </nav>
                             </SheetContent>
                         </Sheet>
-                        <div className="flex w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
+                        <div className="flex items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
                             <form className="ml-auto flex-1 sm:flex-initial">
                                 <AnimatedSearch />
                             </form>
