@@ -39,7 +39,7 @@ export default function HeroHighlightDemo() {
                 effortlessly.
                 <p className="max-w-md leading-relaxed text-lg text-gray-500 xl:text-lg mt-4">
                     We sell only the most exclusive and high quality products
-                    for you. We are the best so come and.
+                    for you. We are the best.
                 </p>
             </motion.h1>
         </HeroHighlight>
