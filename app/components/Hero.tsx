@@ -30,7 +30,7 @@ export default async function Hero() {
                         <HeroHighlight />
                     </div>
 
-                    <div className="mt-6         mb-12 flex w-full md:mb-16 lg:w-2/3">
+                    <div className="mt-6 mb-12 flex w-full md:mb-16 lg:w-2/3">
                         <div className=" md:h-[700px] relative left-12 top-12 z-10 -ml-12 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:left-16 md:top-16 lg:ml-0">
                             <Image
                                 src={urlFor(data.image1).url()}

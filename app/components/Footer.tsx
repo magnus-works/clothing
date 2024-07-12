@@ -9,6 +9,10 @@ import {
     Instagram,
     Youtube,
     Twitter,
+    Smartphone,
+    MapPinned,
+    Phone,
+    LocateFixed,
 } from "lucide-react";
 import {
     Select,
@@ -48,7 +52,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="text-2xl md:text-3xl text-center py-8 border-b-2">
-                THE PIONEERS OF ORGANIC BEAUTY SINCE 1999
+                STRONG PRODUCT DEVELOPMENT SETUP
             </div>
             <div className="flex flex-col md:flex-row justify-around px-4 md:px-32 py-8 border-b-2">
                 <div className="flex flex-col items-center md:items-start gap-3 mb-8 md:mb-0">
@@ -83,19 +87,68 @@ export default function Footer() {
                     </Select>
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row justify-between px-4 md:px-44 py-8 text-center md:text-left">
-                <div className="mb-4 md:mb-0">
-                    <div>
-                        © Copyright 2024 Team Magnus. All Rights Reserved.
+            <div>
+                <div className="flex flex-col lg:flex-row md:justify-between px-4 md:px-32 py-8 text-center md:text-left">
+                    <div className="mb-4 md:mb-0 md:flex">
+                        <div className="md:flex md:justify-center md:items-center">
+                            © Copyright 2024 Team Magnus. All Rights Reserved.
+                        </div>
                     </div>
-                </div>
-                <div className="flex flex-col md:flex-row gap-3">
-                    <div>Privacy Policy</div>
-                    <div>Terms & Conditions</div>
-                </div>
-                <div>
-                    Address and location to be updates here. For more
-                    information.{" "}
+                    <div className="flex flex-col gap-y-2 mb-4 mt-2 md:my-0 justify-start md:justify-center">
+                        <div className="text-2xl font-bold">
+                            Archana Selections
+                        </div>
+                        <div className="text-2xl font-bold">
+                            Archana Garments
+                        </div>
+                    </div>
+                    <div className="gap-y-2">
+                        <div className="">
+                            <div className="text-lg font-bold flex gap-2 justify-center md:justify-start">
+                                <MapPinned className="text-green-500" />
+                                Main Store:
+                            </div>
+                            <div className="text-gray-700">
+                                #4-5-305/306 Ashoknagar, Karimnagar -505001,
+                                Telangana.
+                            </div>
+                            <div>
+                                <div className="flex text-center justify-center md:justify-start">
+                                    <Smartphone className="text-green-500" />:
+                                    <div className="font-bold ml-2">
+                                        +91 9440009232
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="mt-2 text-gray-700">
+                            <div className="font-bold text-black text-lg flex gap-2 justify-center md:justify-start">
+                                <LocateFixed className="text-green-500" />
+                                Branch :
+                            </div>
+                            #19-2-55/1, Markandaya Colony, Godavarikhani,
+                            Peddapelli -505209, Telangana.
+                            <div>
+                                <div className="flex text-center justify-center md:justify-start">
+                                    <Phone className="text-green-500" />:
+                                    <div className="font-bold ml-2 text-black">
+                                        +91 8886651252
+                                    </div>
+                                </div>
+                                <div className="mt-2">
+                                    <div className="font-semibold">
+                                        archanagarmentsknr@gmail.com
+                                    </div>
+                                    <div className="flex justify-center md:justify-start">
+                                        <div className="text-green-800 font-bold">
+                                            GST:
+                                        </div>
+                                        36ALWPP0190P1Z6
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
