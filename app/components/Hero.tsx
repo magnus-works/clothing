@@ -7,6 +7,8 @@ import { FlipWords } from "../../components/ui/flip-words";
 import { motion } from "framer-motion";
 import HeroHighlight from "../../app/components/HeroHighlight";
 import MovingCards from "./MovingCards";
+import { BentoGrid } from "@/components/ui/bento-grid";
+import Card from "./Card";
 import Whatsapp from "./Whatsapp";
 
 import image1 from "../../public/HeroImages/686dcf10-6030-4b31-967d-356f8b747732.webp"; // get image from the local
@@ -80,8 +82,8 @@ export default async function Hero() {
                 </div>
             </div>
             <div className="text-3xl font-bold p-12">
-                Testimonials
-                <MovingCards />
+                <Card />
+                {/* <MovingCards /> */}
             </div>
         </div>
     );
