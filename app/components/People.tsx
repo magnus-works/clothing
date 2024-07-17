@@ -8,16 +8,16 @@ export default function People() {
                 <div className="text-2xl font-bold sm:text-3xl md:text-3xl p-4">
                     People Behind the Brands
                 </div>
-                <div className="flex shadow-md justify-center gap-x-6 p-6 rounded-md border border-gray-200 hover:shadow-lg">
+                <div className="flex items-center flex-col md:flex md:flex-row shadow-md justify-center gap-x-6 p-6 rounded-md border border-gray-200 hover:shadow-lg">
                     <div>
                         <div>
                             <Image
                                 src={pic1}
                                 alt="avatar"
-                                className="md:h-36 md:w-36 h-32 w-32 rounded-full"
+                                className="rounded-full"
                             />
                         </div>
-                        <div className="text-sm font-bold text-gray-500 p-2">
+                        <div className="flex text-sm justify-center items-center font-bold text-gray-500 p-2">
                             P.RAJESH KUMAR
                         </div>
                     </div>
@@ -26,10 +26,10 @@ export default function People() {
                             <Image
                                 src={pic2}
                                 alt="avatar"
-                                className="md:h-36 md:w-36 h-32 w-32 rounded-full"
+                                className="rounded-full"
                             />
                         </div>
-                        <div className="text-sm font-bold text-gray-500 p-2">
+                        <div className="flex justify-center text-sm font-bold text-gray-500 p-2">
                             P.CHANDRASHEKAR
                         </div>
                     </div>

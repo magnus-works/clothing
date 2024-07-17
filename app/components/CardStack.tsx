@@ -8,7 +8,7 @@ import Brand4 from "./images/brand4.png";
 import Image from "next/image";
 export function CardStackDemo() {
     return (
-        <div className="p-20 flex md:justify-between gap-x-10 gap-y-10 flex-col md:flex-row">
+        <div className="mt-20 md:ml-20 flex md:justify-between gap-x-10 gap-y-10 flex-col md:flex-row">
             <div className="flex items-center justify-center">
                 <CardStack items={CARDS} />
             </div>
