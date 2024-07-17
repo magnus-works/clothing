@@ -471,19 +471,19 @@ const items = [
         description:
             "Jeans, Cargos, Shirts, T-Shirts, Denim Shirts, 3 Piece Suits, Huddles",
         header: <SkeletonEight />,
-        icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+        icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
     },
     {
         title: "Girls",
         description: "Frocks, Leggings, Denim Jeans, Weston items",
         header: <SkeletonNine />,
-        icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+        icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
     },
     {
         title: "Ladies",
         description:
             "Patiala Suits, Plazo Suits, Straight Cut Suits, Ankle Fit Leggings, Full Length Leggings, Plazo Pants, Patiala Pants, Cotton Nighties",
         header: <SkeletonTen />,
-        icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+        icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
     },
 ];
