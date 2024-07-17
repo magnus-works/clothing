@@ -27,7 +27,7 @@ export default function Card() {
     return (
         <div>
             <div className="flex justify-center text-3xl font-bold p-12">
-                Product Range
+                Product <div className="text-primary ml-2">Range</div>
             </div>
             <BentoGrid className="max-w-4xl mx-auto">
                 {items.map((item, i) => (

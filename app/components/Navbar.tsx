@@ -70,7 +70,7 @@ export default function Navbar() {
                 <div className="">
                     <HoverCard>
                         <HoverCardTrigger asChild>
-                            <Button className="text-white" variant="link">
+                            <Button className="text-black" variant="link">
                                 @Meet our new clothing store of different
                                 brands!
                             </Button>
@@ -101,15 +101,21 @@ export default function Navbar() {
                     </HoverCard>
                 </div>
                 <div className="hidden md:flex lg:flex h-10 items-center text-sm ">
-                    <Button className="text-white" variant={"link"}>
+                    <Button className="text-black" variant={"link"}>
                         Sign In
                     </Button>
-                    <Separator className="h-4" orientation="vertical" />
-                    <Button className="text-white" variant={"link"}>
+                    <Separator
+                        className="h-4 bg-black"
+                        orientation="vertical"
+                    />
+                    <Button className="text-black" variant={"link"}>
                         Rewards
                     </Button>
-                    <Separator className="h-4" orientation="vertical" />
-                    <Button className="text-white" variant={"link"}>
+                    <Separator
+                        className="h-4 bg-black"
+                        orientation="vertical"
+                    />
+                    <Button className="text-black" variant={"link"}>
                         Blog
                     </Button>
                 </div>
@@ -119,7 +125,7 @@ export default function Navbar() {
                     <AnimatedButton
                         borderRadius="1.75rem"
                         containerClassName="w-60"
-                        className="text-sm bg-white dark:bg-slate-900 text-green-700 font-bold dark:text-white border-neutral-200 dark:border-slate-800"
+                        className="text-sm bg-white dark:bg-slate-900 text-primary font-bold dark:text-white border-neutral-200 dark:border-slate-800"
                     >
                         <BadgeIndianRupee className="mr-2" />
                         Buy now Offers on the Way
@@ -147,13 +153,13 @@ export default function Navbar() {
                         <AvatarFallback>ENG</AvatarFallback>
                     </Avatar>
                     <div>
-                        <Heart className="text-green-600" />
+                        <Heart className="text-primary" />
                     </div>
                     <div>
-                        <User className="text-green-600" />
+                        <User className="text-primary" />
                     </div>
                     <div>
-                        <ShoppingCart className="text-green-600" />
+                        <ShoppingCart className="text-primary" />
                     </div>
                 </div>
             </div>
@@ -165,14 +171,14 @@ export default function Navbar() {
                                 href="/"
                                 className="flex items-center gap-2 text-lg font-semibold md:text-base"
                             >
-                                <Package2 className="h-6 w-6 text-green-600 " />
+                                <Package2 className="h-6 w-6 text-primary " />
                                 <span className="sr-only">Acme Inc</span>
                             </Link>
                             {links.map((link, idx) => (
                                 <div key={idx}>
                                     {pathname === link.href ? (
                                         <Link
-                                            className="text-sx hover:text-foreground text-green-600"
+                                            className="text-sx hover:text-foreground text-primary"
                                             href={link.href}
                                         >
                                             {link.name}
@@ -230,7 +236,7 @@ export default function Navbar() {
                                             {pathname === link.href ? (
                                                 <SheetClose asChild>
                                                     <Link
-                                                        className="text-sx hover:text-foreground text-green-600"
+                                                        className="text-sx hover:text-foreground text-primary"
                                                         href={link.href}
                                                     >
                                                         {link.name}
@@ -265,7 +271,7 @@ export default function Navbar() {
                                         size="icon"
                                         className="rounded-full"
                                     >
-                                        <CircleUser className="h-5 w-5 text-green-700" />
+                                        <CircleUser className="h-5 w-5 text-primary" />
                                         <span className="sr-only">
                                             Toggle user menu
                                         </span>

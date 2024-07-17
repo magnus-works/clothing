@@ -25,29 +25,29 @@ import {
 export default function Footer() {
     return (
         <div className="bg-slate-50">
-            <div className="flex flex-col md:flex-row justify-around px-4 md:px-56 py-3 bg-green-50 text-center">
+            <div className="flex flex-col md:flex-row justify-around px-4 md:px-56 py-3 bg-yellow-50 text-center">
                 <div className="flex flex-col items-center gap-1 mb-4 md:mb-0">
-                    <Box className="h-8 w-8 text-green-400" />
+                    <Box className="h-8 w-8 text-primary" />
                     <div>EASY RETURNS</div>
                 </div>
                 <div className="flex flex-col items-center gap-1 mb-4 md:mb-0">
-                    <CircleHelp className="h-8 w-8 text-green-400" />
+                    <CircleHelp className="h-8 w-8 text-primary" />
                     <div>NEED HELP?</div>
                 </div>
                 <div className="flex flex-col items-center gap-1 mb-4 md:mb-0">
-                    <Gift className="h-8 w-8 text-green-400" />
+                    <Gift className="h-8 w-8 text-primary" />
                     <div>LOYALTY SCHEME</div>
                 </div>
                 <div className="flex flex-col items-center gap-1 mb-4 md:mb-0">
-                    <Repeat className="h-8 w-8 text-green-400" />
+                    <Repeat className="h-8 w-8 text-primary" />
                     <div>SUBSCRIPTIONS</div>
                 </div>
                 <div className="flex flex-col items-center gap-1 mb-4 md:mb-0">
-                    <ScrollText className="h-8 w-8 text-green-400" />
+                    <ScrollText className="h-8 w-8 text-primary" />
                     <div>OUR STORY</div>
                 </div>
                 <div className="flex flex-col items-center gap-1 mb-4 md:mb-0">
-                    <MapPin className="h-8 w-8 text-green-400" />
+                    <MapPin className="h-8 w-8 text-primary" />
                     <div>STOCKISTS</div>
                 </div>
             </div>
@@ -58,19 +58,19 @@ export default function Footer() {
                 <div className="flex flex-col items-center md:items-start gap-3 mb-8 md:mb-0">
                     <div className="">STAY UP TO DATE</div>
                     <div className="flex gap-6">
-                        <Facebook className="h-10 w-10 text-green-400" />
-                        <Instagram className="h-10 w-10 text-green-400" />
-                        <Youtube className="h-10 w-10 text-green-400" />
-                        <Twitter className="h-10 w-10 text-green-400" />
+                        <Facebook className="h-10 w-10 text-primary" />
+                        <Instagram className="h-10 w-10 text-primary" />
+                        <Youtube className="h-10 w-10 text-primary" />
+                        <Twitter className="h-10 w-10 text-primary" />
                     </div>
                 </div>
                 <div className="flex flex-col items-center md:items-start gap-3 mb-8 md:mb-0">
                     <div className="">CERTIFICATIONS</div>
                     <div className="flex gap-6">
-                        <Box className="h-10 w-10 text-green-400" />
-                        <Box className="h-10 w-10 text-green-400" />
-                        <Box className="h-10 w-10 text-green-400" />
-                        <Box className="h-10 w-10 text-green-400" />
+                        <Box className="h-10 w-10 text-primary" />
+                        <Box className="h-10 w-10 text-primary" />
+                        <Box className="h-10 w-10 text-primary" />
+                        <Box className="h-10 w-10 text-primary" />
                     </div>
                 </div>
                 <div className="flex flex-col items-center md:items-start gap-3 mb-8 md:mb-0">
@@ -105,7 +105,7 @@ export default function Footer() {
                     <div className="gap-y-2">
                         <div className="">
                             <div className="text-lg font-bold flex gap-2 justify-center md:justify-start">
-                                <MapPinned className="text-green-500" />
+                                <MapPinned className="text-primary" />
                                 Main Store:
                             </div>
                             <div className="text-gray-700">
@@ -114,7 +114,7 @@ export default function Footer() {
                             </div>
                             <div>
                                 <div className="flex text-center justify-center md:justify-start">
-                                    <Smartphone className="text-green-500" />:
+                                    <Smartphone className="text-primary" />:
                                     <div className="font-bold ml-2">
                                         +91 9440009232
                                     </div>
@@ -123,14 +123,14 @@ export default function Footer() {
                         </div>
                         <div className="mt-2 text-gray-700">
                             <div className="font-bold text-black text-lg flex gap-2 justify-center md:justify-start">
-                                <LocateFixed className="text-green-500" />
+                                <LocateFixed className="text-primary" />
                                 Branch :
                             </div>
                             #19-2-55/1, Markandaya Colony, Godavarikhani,
                             Peddapelli -505209, Telangana.
                             <div>
                                 <div className="flex text-center justify-center md:justify-start">
-                                    <Phone className="text-green-500" />:
+                                    <Phone className="text-primary" />:
                                     <div className="font-bold ml-2 text-black">
                                         +91 8886651252
                                     </div>
