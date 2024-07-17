@@ -21,11 +21,13 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select";
+import Map from "../../app/components/Map";
 
 export default function Footer() {
     return (
         <div className="bg-slate-50">
-            <div className="flex flex-col md:flex-row justify-around px-4 md:px-56 py-3 bg-yellow-50 text-center">
+            <Map />
+            <div className="mt-6 flex flex-col md:flex-row justify-around px-4 md:px-56 py-3 bg-yellow-50 text-center">
                 <div className="flex flex-col items-center gap-1 mb-4 md:mb-0">
                     <Box className="h-8 w-8 text-primary" />
                     <div>EASY RETURNS</div>
