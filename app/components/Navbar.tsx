@@ -35,18 +35,31 @@ import image1 from "../../public/MenuPhotos/Home.jpg";
 import image2 from "../../public/MenuPhotos/MenMenu.jpg";
 import image3 from "../../public/MenuPhotos/Women.jpg";
 import image4 from "../../public/MenuPhotos/Kids.jpg";
+import image5 from "../../app/components/images/Shirt.jpg";
+import image6 from "../../app/components/images/BottomWear.jpeg";
+import image7 from "../../app/components/images/Tshirt.jpg";
+import image8 from "../../app/components/images/sports.jpg";
+import image9 from "../../app/components/images/outerwear.jpg";
+import image10 from "../../app/components/images/ethinic.jpg";
+import image11 from "../../app/components/images/seasonal.jpeg";
 import logo from "../../public/Archanalogo.png";
 import AnimatedSearch from "./AnimatedSearch";
 import Image from "next/image";
 const links = [
     { name: "Home", href: "/", img: image1 },
-    { name: "Men", href: "/Men", img: image2 },
+    { name: "Shirts", href: "/Shirts", img: image5 },
+    { name: "Bottom Wear", href: "/Bottom-Wear", img: image6 },
+    { name: "Mens T-Shirts", href: "/Mens-TShirts", img: image7 },
+    { name: "Sports Wear", href: "/Sports-Wear", img: image8 },
+    { name: "Outer Wear", href: "/Outer-Wear", img: image9 },
+    { name: "Ethinic Wear", href: "/Ethinic-Wear", img: image10 },
     {
         name: "Women",
         href: "/Women",
         img: image3,
     },
     { name: "Kids", href: "/Kids", img: image4 },
+    { name: "Seasonal", href: "/Seasonal", img: image11 },
 ];
 
 export default function Navbar() {
