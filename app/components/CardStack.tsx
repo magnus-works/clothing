@@ -9,7 +9,7 @@ import Image from "next/image";
 export function CardStackDemo() {
     return (
         <div className="p-20 flex md:justify-between gap-x-10 gap-y-10 flex-col md:flex-row">
-            <div className="flex items-center justify-center p-10">
+            <div className="flex items-center justify-center">
                 <CardStack items={CARDS} />
             </div>
             <div className="flex flex-col gap-y-4 lg:flex-row gap-x-4 md:gap-x-10 lg:gap-x-20 justify-center items-center">

@@ -14,9 +14,7 @@ export default function People() {
                             <Image
                                 src={pic1}
                                 alt="avatar"
-                                height="100"
-                                width="100"
-                                className="h-36 w-36 rounded-full"
+                                className="md:h-36 md:w-36 h-32 w-32 rounded-full"
                             />
                         </div>
                         <div className="text-sm font-bold text-gray-500 p-2">
@@ -28,9 +26,7 @@ export default function People() {
                             <Image
                                 src={pic2}
                                 alt="avatar"
-                                height="100"
-                                width="100"
-                                className="h-36 w-36 rounded-full"
+                                className="md:h-36 md:w-36 h-32 w-32 rounded-full"
                             />
                         </div>
                         <div className="text-sm font-bold text-gray-500 p-2">
