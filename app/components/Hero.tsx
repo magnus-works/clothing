@@ -59,7 +59,8 @@ export default async function Hero() {
                     </div>
                 </div>
             </section>
-            <div className="flex flex-col items-center justify-between md:items-center md:justify-center gap-8 md:flex-row">
+            {/* Special Category Bar for navigation  */}
+            {/* <div className="flex flex-col items-center justify-between md:items-center md:justify-center gap-8 md:flex-row">
                 <div className="flex h-12 w-64 divide-x overflow-hidden rounded-lg border">
                     <Link
                         href="/Men"
@@ -79,8 +80,50 @@ export default async function Hero() {
                     >
                         Kids
                     </Link>
+                    <Link
+                        href="/Mens-TShirts"
+                        className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
+                    >
+                        T-Shirts
+                    </Link>
+                    <Link
+                        href="/Shirts"
+                        className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
+                    >
+                        Shirts
+                    </Link>
+                    <Link
+                        href="/Bottom-Wear"
+                        className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
+                    >
+                        Bottom Wear
+                    </Link>
+                    <Link
+                        href="/Sports-Wear"
+                        className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
+                    >
+                        Sports Wear
+                    </Link>
+                    <Link
+                        href="/Outer-Wear"
+                        className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
+                    >
+                        Outer Wear
+                    </Link>
+                    <Link
+                        href="/Ethinic-Wear"
+                        className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
+                    >
+                        Ethinic Wear
+                    </Link>
+                    <Link
+                        href="/Seasonal"
+                        className="flex w-1/3 items-center justify-center text-gray-500 transition duration-100 hover:bg-gray-100 active:bg-gray-200"
+                    >
+                        Seasonal Wear
+                    </Link>
                 </div>
-            </div>
+            </div> */}
             <div className="text-3xl font-bold p-12">
                 <Card />
                 {/* <MovingCards /> */}

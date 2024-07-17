@@ -22,6 +22,7 @@ import outerwear from "./images/outerwear.jpg";
 import seasonal from "./images/seasonal.jpeg";
 import sports from "./images/sports.jpg";
 import Tshirt from "./images/Tshirt.jpg";
+import Link from "next/link";
 export default function Card() {
     return (
         <div>
@@ -58,24 +59,26 @@ const SkeletonOne = () => {
     };
 
     return (
-        <motion.div
-            initial="initial"
-            whileHover="animate"
-            className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
-        >
+        <Link href="/Shirts">
             <motion.div
-                variants={variants}
-                className="flex flex-row justify-center rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
+                initial="initial"
+                whileHover="animate"
+                className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
             >
-                <Image
-                    src={Shirt}
-                    alt="avatar"
-                    height="100"
-                    width="100"
-                    className="h-36 w-36"
-                />
+                <motion.div
+                    variants={variants}
+                    className="flex flex-row justify-center rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
+                >
+                    <Image
+                        src={Shirt}
+                        alt="avatar"
+                        height="100"
+                        width="100"
+                        className="h-36 w-36"
+                    />
+                </motion.div>
             </motion.div>
-        </motion.div>
+        </Link>
     );
 };
 const SkeletonTwo = () => {
@@ -98,18 +101,20 @@ const SkeletonTwo = () => {
             whileHover="animate"
             className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
         >
-            <motion.div
-                variants={variants}
-                className="flex flex-row justify-center rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
-            >
-                <Image
-                    src={BottomWear}
-                    alt="avatar"
-                    height="100"
-                    width="100"
-                    className="h-34 w-34"
-                />
-            </motion.div>
+            <Link href="/Bottom-Wear">
+                <motion.div
+                    variants={variants}
+                    className="flex flex-row justify-center rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
+                >
+                    <Image
+                        src={BottomWear}
+                        alt="avatar"
+                        height="100"
+                        width="100"
+                        className="h-34 w-34"
+                    />
+                </motion.div>
+            </Link>
         </motion.div>
     );
 };
@@ -133,18 +138,20 @@ const SkeletonThree = () => {
             whileHover="animate"
             className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
         >
-            <motion.div
-                variants={variants}
-                className="flex flex-row justify-center rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
-            >
-                <Image
-                    src={Tshirt}
-                    alt="avatar"
-                    height="100"
-                    width="100"
-                    className="h-34 w-34"
-                />
-            </motion.div>
+            <Link href="Mens-TShirts">
+                <motion.div
+                    variants={variants}
+                    className="flex flex-row justify-center rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
+                >
+                    <Image
+                        src={Tshirt}
+                        alt="avatar"
+                        height="100"
+                        width="100"
+                        className="h-30 w-30"
+                    />
+                </motion.div>
+            </Link>
         </motion.div>
     );
 };
@@ -168,18 +175,20 @@ const SkeletonFour = () => {
             whileHover="animate"
             className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
         >
-            <motion.div
-                variants={variants}
-                className="flex flex-row justify-center rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
-            >
-                <Image
-                    src={sports}
-                    alt="avatar"
-                    height="100"
-                    width="100"
-                    className="h-36 w-36"
-                />
-            </motion.div>
+            <Link href="/Sports-Wear">
+                <motion.div
+                    variants={variants}
+                    className="flex flex-row justify-center rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
+                >
+                    <Image
+                        src={sports}
+                        alt="avatar"
+                        height="100"
+                        width="100"
+                        className="h-36 w-36"
+                    />
+                </motion.div>
+            </Link>
         </motion.div>
     );
 };
@@ -203,18 +212,20 @@ const SkeletonFive = () => {
             whileHover="animate"
             className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
         >
-            <motion.div
-                variants={variants}
-                className="flex flex-row justify-center rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
-            >
-                <Image
-                    src={outerwear}
-                    alt="avatar"
-                    height="100"
-                    width="100"
-                    className="h-36 w-36"
-                />
-            </motion.div>
+            <Link href="/Outer-Wear">
+                <motion.div
+                    variants={variants}
+                    className="flex flex-row justify-center rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
+                >
+                    <Image
+                        src={outerwear}
+                        alt="avatar"
+                        height="100"
+                        width="100"
+                        className="h-36 w-36"
+                    />
+                </motion.div>
+            </Link>
         </motion.div>
     );
 };
@@ -238,18 +249,20 @@ const SkeletonSix = () => {
             whileHover="animate"
             className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
         >
-            <motion.div
-                variants={variants}
-                className="flex flex-row justify-center rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
-            >
-                <Image
-                    src={ethinic}
-                    alt="avatar"
-                    height="100"
-                    width="100"
-                    className="h-36 w-36"
-                />
-            </motion.div>
+            <Link href="/Ethinic-Wear">
+                <motion.div
+                    variants={variants}
+                    className="flex flex-row justify-center rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
+                >
+                    <Image
+                        src={ethinic}
+                        alt="avatar"
+                        height="100"
+                        width="100"
+                        className="h-36 w-36"
+                    />
+                </motion.div>
+            </Link>
         </motion.div>
     );
 };
@@ -273,18 +286,20 @@ const SkeletonSeven = () => {
             whileHover="animate"
             className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
         >
-            <motion.div
-                variants={variants}
-                className="flex flex-row justify-center rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
-            >
-                <Image
-                    src={seasonal}
-                    alt="avatar"
-                    height="100"
-                    width="100"
-                    className="h-36 w-36"
-                />
-            </motion.div>
+            <Link href="Seasonal">
+                <motion.div
+                    variants={variants}
+                    className="flex flex-row justify-center rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
+                >
+                    <Image
+                        src={seasonal}
+                        alt="avatar"
+                        height="100"
+                        width="100"
+                        className="h-36 w-36"
+                    />
+                </motion.div>
+            </Link>
         </motion.div>
     );
 };
@@ -308,18 +323,20 @@ const SkeletonEight = () => {
             whileHover="animate"
             className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
         >
-            <motion.div
-                variants={variants}
-                className="flex flex-row justify-center rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
-            >
-                <Image
-                    src={boys}
-                    alt="avatar"
-                    height="100"
-                    width="100"
-                    className="h-36 w-36"
-                />
-            </motion.div>
+            <Link href="/Kids">
+                <motion.div
+                    variants={variants}
+                    className="flex flex-row justify-center rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
+                >
+                    <Image
+                        src={boys}
+                        alt="avatar"
+                        height="100"
+                        width="100"
+                        className="h-36 w-36"
+                    />
+                </motion.div>
+            </Link>
         </motion.div>
     );
 };
@@ -343,18 +360,20 @@ const SkeletonNine = () => {
             whileHover="animate"
             className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
         >
-            <motion.div
-                variants={variants}
-                className="flex flex-row justify-center rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
-            >
-                <Image
-                    src={girls}
-                    alt="avatar"
-                    height="100"
-                    width="100"
-                    className="h-36 w-36"
-                />
-            </motion.div>
+            <Link href="/Women">
+                <motion.div
+                    variants={variants}
+                    className="flex flex-row justify-center rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
+                >
+                    <Image
+                        src={girls}
+                        alt="avatar"
+                        height="100"
+                        width="100"
+                        className="h-36 w-36"
+                    />
+                </motion.div>
+            </Link>
         </motion.div>
     );
 };
@@ -378,18 +397,20 @@ const SkeletonTen = () => {
             whileHover="animate"
             className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
         >
-            <motion.div
-                variants={variants}
-                className="flex flex-row justify-center rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
-            >
-                <Image
-                    src={ladies}
-                    alt="avatar"
-                    height="100"
-                    width="100"
-                    className="h-36 w-36"
-                />
-            </motion.div>
+            <Link href="/Women">
+                <motion.div
+                    variants={variants}
+                    className="flex flex-row justify-center rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
+                >
+                    <Image
+                        src={ladies}
+                        alt="avatar"
+                        height="100"
+                        width="100"
+                        className="h-36 w-36"
+                    />
+                </motion.div>
+            </Link>
         </motion.div>
     );
 };
